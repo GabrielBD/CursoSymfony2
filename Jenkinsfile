@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh 'mvn --version'
+        bat 'mvn clean'
       }
     }
   }
