@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        bat 'mvn clean'
+        bash '''#!/bin/bash
+                 echo "hello world" 
+         '''
       }
     }
   }
